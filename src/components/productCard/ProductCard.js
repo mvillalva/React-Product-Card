@@ -42,7 +42,7 @@ const ProductCard = ({prods, id, name, desc}) => {
                     <Card.Text>{desc}</Card.Text>
                     <div className="d-flex gap-3 justify-content-center">
                         <Form>
-                            <Form.Control className="cantidad-sz" type="number" onChange={addCantidad} value={cantidad}/>
+                            <Form.Control className="cantidad-sz" type="number" min={0} onChange={addCantidad} value={cantidad}/>
                         </Form>
                         <Button variant="primary" onClick={()=>{addProduct()}}>Agregar</Button>
                     </div>
