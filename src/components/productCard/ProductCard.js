@@ -3,6 +3,7 @@ import { Card, Form, Button } from "react-bootstrap";
 import logo1 from "../../img/cosmetico.jpg";
 import logo2 from "../../img/producto2.jpg";
 import logo3 from "../../img/producto3.jpg";
+import {IoAddCircle, IoTrash} from 'react-icons/io5'
 import './ProductCard.css'
 
 const ProductCard = ({prods, id, name, desc}) => {
@@ -47,7 +48,7 @@ const ProductCard = ({prods, id, name, desc}) => {
                         <Form>
                             <Form.Control className="cantidad-sz" type="number" min={0} onChange={addCantidad} value={cantidad}/>
                         </Form>
-                        <Button variant="primary" onClick={()=>{addProduct()}}>Agregar</Button>
+                        <Button variant={cantidad == 0?"danger":"primary"} onClick={()=>{addProduct()}}>{cantidad == 0? <IoTrash className="fs-5" /> :<IoAddCircle className="fs-5" />}</Button>
                     </div>
                 </Card.Body>
             </Card>
