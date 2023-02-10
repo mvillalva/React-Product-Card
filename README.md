@@ -1,5 +1,5 @@
 # Ejemplo de guardado de productos en un array
-La idea es tener una serie de tarjetas que representa a un producto y al presionar el botón Agregar, se guarda en un array un obejto con el id del producto, la descripcion y la cantidad seleccionada en un arreglo de objetos.
+La idea es tener una serie de tarjetas que representa a un producto y al presionar el botón Agregar, se guarda en un array un obejto con el id del producto, la descripcion y la cantidad seleccionada en un arreglo de objetos, pasando por medio de props un useState para mantener el arreglo de objetos actualizado.
 
 # Getting Started with Create React App
 
