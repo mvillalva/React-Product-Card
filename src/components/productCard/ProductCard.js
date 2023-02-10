@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-import logo from "../../img/cosmetico.jpg";
+import logo1 from "../../img/cosmetico.jpg";
+import logo2 from "../../img/producto2.jpg";
+import logo3 from "../../img/producto3.jpg";
 import './ProductCard.css'
 
 const ProductCard = ({prods, id, name, desc}) => {
@@ -37,7 +39,7 @@ const ProductCard = ({prods, id, name, desc}) => {
     return (
         <div>
             <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" className="img-sz" src={logo} />
+                <Card.Img variant="top" className="img-sz" src={id%3 === 0?logo3:id%2===0?logo2:logo1} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>{desc}</Card.Text>
