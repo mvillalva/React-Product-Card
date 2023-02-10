@@ -7,9 +7,9 @@ const Home = () => {
 
   const showProducts = () => {
     return (
-      <ul>
+      <ul className="d-flex gap-5">
         {
-          products.map(e => <li>id: {e.id} - Nombre: {e.nombre} - Descripción: {e.desc} - Cantidad: {e.cantidad}</li>)
+          products.map(e => <li>id: {e.id} <br /> Nombre: {e.nombre} <br /> Descripción: {e.desc} <br /> Cantidad: {e.cantidad}</li>)
         }
       </ul>
     )
