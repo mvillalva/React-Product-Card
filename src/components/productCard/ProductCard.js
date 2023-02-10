@@ -18,6 +18,7 @@ const ProductCard = ({prods, id, name, desc}) => {
             } else {
                 producto = {
                     id: id,
+                    nombre: name,
                     cantidad: cantidad,
                     desc: desc
                 }

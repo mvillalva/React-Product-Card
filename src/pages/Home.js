@@ -8,7 +8,9 @@ const Home = () => {
   const showProducts = () => {
     return (
       <ul>
-        {JSON.stringify(products).split('},{').map((v)=><li>{v}</li>)}
+        {
+          products.map(e => <li>id: {e.id} - Nombre: {e.nombre} - Descripción: {e.desc} - Cantidad: {e.cantidad}</li>)
+        }
       </ul>
     )
   }
