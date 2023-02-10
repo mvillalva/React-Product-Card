@@ -1,0 +1,8 @@
+.img-sz {
+    max-height: 15rem;
+    object-fit: cover;
+}
+
+.cantidad-sz {
+    width: 80px !important;
+}
